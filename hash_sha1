@@ -1,0 +1,8 @@
+import hashlib
+
+
+def gerar_sha1(texto):
+
+    return hashlib.sha1(
+        str(texto).encode()
+    ).hexdigest()
